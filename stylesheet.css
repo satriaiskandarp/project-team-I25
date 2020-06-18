@@ -1,7 +1,46 @@
 /* style header */
+@keyframes header {
+    0%   {background-color:#130f40}
+    25%  {background-color:#4834d4}
+    50%  {background-color:#686de0}
+    75%  {background-color:#30336b}
+    100% {background-color:#130f40}
+  }
 
+.list li{
+    float: left;
+    padding: 33px 20px;
+    list-style: none;
+  }
+  
+  .logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  
+  .header {
+    background-color: #130f40;
+    color: #fff;
+    height: 90px;
+    animation-name: header;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: fixed;
+  }
+
+.login li {
+    list-style: none;
+    float: right;
+    padding: 33px 40px;
+    font-size: 20px;
+}
+span {
+    color: red;
+}
 /* style bagian utama */
 
 /* style bagian tambahan */
+
 
 /* style footer */
