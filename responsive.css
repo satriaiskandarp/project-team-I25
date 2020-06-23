@@ -22,13 +22,13 @@
         flex-wrap: wrap;
         line-height: 20px;
         width: 600px;
-      margin-left: 130px;
+      margin-left: 40px;
     }
 
     .card {
-        margin-left: 10px;
+        margin-left: 20px;
         width: 25%;
-        margin-right: 50px;
+        margin-right: 20px;
     }
 
     .heading1 {
@@ -51,8 +51,42 @@
         line-height: 10px;
     }
     footer {
-        margin-top: 50px;
+        flex-direction: column;
     }
+    .footer .footer-content {
+        border: none;
+    }
+
+    .links {
+      margin-left: 40px;
+    }
+
+    .about h1 {
+        font-size: 13px;
+    }
+
+    .about p {
+        font-size: 10px;
+    }
+
+    .footer .footer-content .footer-section {
+        border: none;
+        width: 5%;
+    }
+
+    .footer .footer-content h2 {
+        font-size: 13px;
+    }
+
+    .footer .footer-content .links ul a {
+        font-size: 10px;
+        margin-left: -20px;
+    }
+
+    footer .footer-content .contact-form span {
+      font-size: 10px;
+    }
+   
   }
   
   /* Untuk Smartphone */
@@ -67,10 +101,6 @@
     
     .btn {
       width: 100%;
-    }
-    
-    .facebook {
-      margin-bottom: 10px;
     }
     
     .top-wrapper {
@@ -107,11 +137,22 @@
 
     .card {
     width: 100%;
-    margin-left: -20px;
+    margin-left: 0px;
     margin-bottom: 20px;
     }
 
     .heading1 h2 {
         margin-left: 40px;
+    }
+    .lessons {
+      margin-left: 150px;
+    }
+
+    .links {
+      margin-left: -20px;
+    }
+
+    .footer-section .contact-form .kontak {
+      font-size: 10px;
     }
   }
