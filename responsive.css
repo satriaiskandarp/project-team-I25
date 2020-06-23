@@ -1,3 +1,117 @@
-/* responsive smartphone */
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .lesson {
+      width: 50%;
+      margin-bottom: 50px;
+      
+    }
+    
+    .top-wrapper h1 {
+      font-size: 32px;
+    }
+    
+    .heading h2 {
+      font-size: 20px;
+    }
 
-/* responsive tablet */
+    .signup {
+        margin-left: -10px;
+    }
+
+    .lessons {
+        flex-wrap: wrap;
+        line-height: 20px;
+        width: 600px;
+      margin-left: 130px;
+    }
+
+    .card {
+        margin-left: 10px;
+        width: 25%;
+        margin-right: 50px;
+    }
+
+    .heading1 {
+        margin-left: -90px;
+    }
+
+    .column {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .card1 {
+        margin-top: -50px;
+        margin-bottom: -200px;
+        width: 103%;
+    }
+
+    .row {
+        line-height: 10px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+  }
+  
+  /* Untuk Smartphone */
+  @media all and (max-width: 670px) {
+    .lesson {
+      width: 100%;
+    }
+    
+    footer {
+      text-align: center;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+    
+    .facebook {
+      margin-bottom: 10px;
+    }
+    
+    .top-wrapper {
+      text-align: left;
+    }
+    
+    .header-right {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+    }
+    
+    .top-wrapper h1 {
+      font-size: 17px;
+      line-height: 36px;
+    }
+
+    .top-wrapper h2 {
+        font-size: 20px;
+    }
+    
+    .top-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .flip-box {
+     float: none;
+     margin-left: -100px;
+     margin-bottom: 20px;
+    }
+
+    .card {
+    width: 100%;
+    margin-left: -20px;
+    margin-bottom: 20px;
+    }
+
+    .heading1 h2 {
+        margin-left: 40px;
+    }
+  }

@@ -1,46 +1,307 @@
 /* style header */
-@keyframes header {
-    0%   {background-color:#130f40}
-    25%  {background-color:#4834d4}
-    50%  {background-color:#686de0}
-    75%  {background-color:#30336b}
-    100% {background-color:#130f40}
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://image.freepik.com/free-photo/top-view-travel-kit-elements-table_23-2148315777.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .signup {
+    background-color: #239b76;
   }
 
-.list li{
+  .judul {
+    text-align: center;
+    margin-top: 50px;
+    color: #5f5d60;
+    font-size: 20px;
+  }
+  
+  .flip-box {
+    background-color: transparent;
+    width: 250px;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
     float: left;
-    padding: 33px 20px;
-    list-style: none;
+    margin-left: 30px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    flex: auto;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front h2 {
+    margin-top: 0px;
+  }
+
+  .flip-box-back p {
+    margin-top: 60px;
+  }
+  
+  .flip-box-front {
+    background-color: #f1f2f6;
+    color: black;
+    box-shadow: 5px 10px #d1ccc0;
+  }
+  
+  .flip-box-back {
+    background-color: #63cdda;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .rupiah {
+    width: 50px;
+    margin-top: 25px;
+  }
+  .ceklis {
+    width: 50px;
+    margin-top: 25px;
+  }
+  .puas {
+    width: 50px;
+    margin-top: 25px;
+  }
+  .destinasi {
+    width: 50px;
+    margin-top: 25px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(255, 255, 255,1.0);
+    position :fixed;
+    top: 0;
+    z-index: 10;
   }
   
   .logo {
-    float: left;
-    font-size: 36px;
-    padding: 20px 40px;
+    width: 124px;
   }
   
-  .header {
-    background-color: #130f40;
-    color: #fff;
-    height: 90px;
-    animation-name: header;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: fixed;
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: #464749;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(19, 182, 204, 0.3);
+  }
+  
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+  
+  
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
   }
 
-.login li {
-    list-style: none;
-    float: right;
-    padding: 33px 40px;
-    font-size: 20px;
+  .lesson {
+    display: flex;
+    flex: auto;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    margin-left: 90px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .heading1 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+    text-align: center;
+  }
+
+  .rekomendasi {
+    margin-left: 60px;
+    margin-bottom: 100px;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+ /* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 5px;
+  margin-left: 60px;
 }
-span {
-    color: red;
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-/* style bagian utama */
 
-/* style bagian tambahan */
+/* Style the counter cards */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
 
+.fa {font-size:50px;}
 
-/* style footer */
+.counter .column{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer p {
+  color: black;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #7bed9f;
+}
